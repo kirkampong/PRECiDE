@@ -47,11 +47,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 # Initialising the ANN
 classifier = Sequential()
 # Input layer
-classifier.add(Dense(input_shape=(11,), units = 32, activation = 'sigmoid'))
-classifier.add(Dense(units = 32, activation = 'sigmoid')) # second (hidden) layer
-classifier.add(Dense(units = 8, activation = 'sigmoid')) # third (hidden) layer
+classifier.add(Dense(input_shape=(11,), units = 1, activation = 'sigmoid'))
+#classifier.add(Dense(units = 8, activation = 'sigmoid')) # third (hidden) layer
 # Output layer
-classifier.add(Dense(units = 1, activation = 'sigmoid'))
+#classifier.add(Dense(units = 1, activation = 'sigmoid'))
 print(classifier.output_shape)
 # Compiling the ANN
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])

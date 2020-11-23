@@ -2,3 +2,4 @@ pip install packages required:
 pandas
 sklearn
 seaborn
+keras
