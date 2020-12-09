@@ -1,4 +1,4 @@
-# **Predicting Economic Crisis In Developing Economies **
+# Predicting Economic Crisis In Developing Economies 
 
 A Deep Neural Network to predict economic crisis in developing economies
 
